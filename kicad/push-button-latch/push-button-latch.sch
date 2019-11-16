@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Push Button Latch"
+Date "2019-11-16"
+Rev "B"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5DD0566E
+P 2350 1750
+F 0 "R1" H 2420 1796 50  0000 L CNN
+F 1 "100k" H 2420 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2280 1750 50  0001 C CNN
+F 3 "~" H 2350 1750 50  0001 C CNN
+	1    2350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DD06287
+P 2350 3000
+F 0 "C1" H 2465 3046 50  0000 L CNN
+F 1 "330n" H 2465 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2388 2850 50  0001 C CNN
+F 3 "~" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DD06BD8
+P 4500 1350
+F 0 "D1" V 4539 1233 50  0000 R CNN
+F 1 "LED" V 4448 1233 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4500 1350 50  0001 C CNN
+F 3 "~" H 4500 1350 50  0001 C CNN
+	1    4500 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DD077D7
+P 2800 2750
+F 0 "SW1" H 2800 3035 50  0000 C CNN
+F 1 "SW_Push" H 2800 2944 50  0000 C CNN
+F 2 "" H 2800 2950 50  0001 C CNN
+F 3 "~" H 2800 2950 50  0001 C CNN
+	1    2800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L barn53-kicad:SIA527DJ-T1-GE3 Q1
+U 1 1 5DD08099
+P 3300 4000
+F 0 "Q1" H 3488 4046 50  0000 L CNN
+F 1 "SIA527DJ-T1-GE3" H 3488 3955 50  0000 L CNN
+F 2 "barn53-kicad:PowerPAK_SC70-6L_Dual" H 4250 3800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1806021242_Vishay-Intertech-SIA527DJ-T1-GE3_C222486.pdf" H 3300 4000 50  0001 C CNN
+	1    3300 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DD23560
+P 2350 2350
+F 0 "R2" H 2420 2396 50  0000 L CNN
+F 1 "1M" H 2420 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2280 2350 50  0001 C CNN
+F 3 "~" H 2350 2350 50  0001 C CNN
+	1    2350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5DD239E9
+P 4150 1750
+F 0 "R6" H 4220 1796 50  0000 L CNN
+F 1 "10k" H 4220 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4080 1750 50  0001 C CNN
+F 3 "~" H 4150 1750 50  0001 C CNN
+	1    4150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DD23EB1
+P 3200 2350
+F 0 "R3" H 3270 2396 50  0000 L CNN
+F 1 "10k" H 3270 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 2350 50  0001 C CNN
+F 3 "~" H 3200 2350 50  0001 C CNN
+	1    3200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DD2444B
+P 3650 2350
+F 0 "R4" H 3720 2396 50  0000 L CNN
+F 1 "10k" H 3720 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 2350 50  0001 C CNN
+F 3 "~" H 3650 2350 50  0001 C CNN
+	1    3650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5DD260EA
+P 4500 1750
+F 0 "R7" H 4570 1796 50  0000 L CNN
+F 1 "470" H 4570 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 1750 50  0001 C CNN
+F 3 "~" H 4500 1750 50  0001 C CNN
+	1    4500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L barn53-kicad:SIA527DJ-T1-GE3 Q2
+U 2 1 5DD2081B
+P 5300 2100
+F 0 "Q2" H 5488 2146 50  0000 L CNN
+F 1 "SIA527DJ-T1-GE3" H 5488 2055 50  0000 L CNN
+F 2 "barn53-kicad:PowerPAK_SC70-6L_Dual" H 6250 1900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1806021242_Vishay-Intertech-SIA527DJ-T1-GE3_C222486.pdf" H 5300 2100 50  0001 C CNN
+	2    5300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L barn53-kicad:SIA527DJ-T1-GE3 Q1
+U 2 1 5DD0A15C
+P 3100 1600
+F 0 "Q1" H 3288 1646 50  0000 L CNN
+F 1 "SIA527DJ-T1-GE3" H 3288 1555 50  0000 L CNN
+F 2 "barn53-kicad:PowerPAK_SC70-6L_Dual" H 4050 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1806021242_Vishay-Intertech-SIA527DJ-T1-GE3_C222486.pdf" H 3100 1600 50  0001 C CNN
+	2    3100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L barn53-kicad:SIA527DJ-T1-GE3 Q2
+U 1 1 5DD1A3B5
+P 4050 2650
+F 0 "Q2" H 4238 2696 50  0000 L CNN
+F 1 "SIA527DJ-T1-GE3" H 4238 2605 50  0000 L CNN
+F 2 "barn53-kicad:PowerPAK_SC70-6L_Dual" H 5000 2450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1806021242_Vishay-Intertech-SIA527DJ-T1-GE3_C222486.pdf" H 4050 2650 50  0001 C CNN
+	1    4050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5DD26DEE
+P 3650 4400
+F 0 "R5" H 3720 4446 50  0000 L CNN
+F 1 "10k" H 3720 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5DD27628
+P 4850 2000
+F 0 "R8" V 4643 2000 50  0000 C CNN
+F 1 "100k" V 4734 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4780 2000 50  0001 C CNN
+F 3 "~" H 4850 2000 50  0001 C CNN
+	1    4850 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR02
+U 1 1 5DD2820A
+P 3200 1100
+F 0 "#PWR02" H 3200 950 50  0001 C CNN
+F 1 "VCC" H 3217 1273 50  0000 C CNN
+F 2 "" H 3200 1100 50  0001 C CNN
+F 3 "" H 3200 1100 50  0001 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DD296F9
+P 3200 4800
+F 0 "#PWR03" H 3200 4550 50  0001 C CNN
+F 1 "GND" H 3205 4627 50  0000 C CNN
+F 2 "" H 3200 4800 50  0001 C CNN
+F 3 "" H 3200 4800 50  0001 C CNN
+	1    3200 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1800 3200 2100
+Wire Wire Line
+	3200 2500 3200 2750
+Wire Wire Line
+	2900 1500 2350 1500
+Wire Wire Line
+	2350 1500 2350 1600
+Wire Wire Line
+	2350 1900 2350 2000
+Wire Wire Line
+	2350 2500 2350 2750
+Wire Wire Line
+	3650 2200 3650 2100
+Wire Wire Line
+	3650 2100 3200 2100
+Connection ~ 3200 2100
+Wire Wire Line
+	3200 2100 3200 2200
+Wire Wire Line
+	3650 2500 3650 3000
+Wire Wire Line
+	3650 3000 4150 3000
+Wire Wire Line
+	4150 3000 4150 2850
+$Comp
+L power:GND #PWR04
+U 1 1 5DD2FEDC
+P 4150 3050
+F 0 "#PWR04" H 4150 2800 50  0001 C CNN
+F 1 "GND" H 4155 2877 50  0000 C CNN
+F 2 "" H 4150 3050 50  0001 C CNN
+F 3 "" H 4150 3050 50  0001 C CNN
+	1    4150 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3050 4150 3000
+Connection ~ 4150 3000
+Wire Wire Line
+	4150 2450 4150 2000
+Wire Wire Line
+	4150 1600 4150 1150
+Wire Wire Line
+	4150 1150 3200 1150
+Wire Wire Line
+	3200 1150 3200 1400
+Wire Wire Line
+	3200 1150 3200 1100
+Connection ~ 3200 1150
+Wire Wire Line
+	3500 4100 3650 4100
+Wire Wire Line
+	3650 4100 3650 4250
+Wire Wire Line
+	3200 4200 3200 4700
+Wire Wire Line
+	3200 4700 3650 4700
+Wire Wire Line
+	3650 4700 3650 4550
+Wire Wire Line
+	3850 2750 3200 2750
+Connection ~ 3200 2750
+Wire Wire Line
+	3200 2750 3200 3800
+Wire Wire Line
+	3200 2750 3000 2750
+Wire Wire Line
+	2600 2750 2350 2750
+Connection ~ 2350 2750
+Wire Wire Line
+	2350 2750 2350 2850
+Wire Wire Line
+	2350 2000 4150 2000
+Connection ~ 2350 2000
+Wire Wire Line
+	2350 2000 2350 2200
+Connection ~ 4150 2000
+Wire Wire Line
+	4150 2000 4150 1900
+Wire Wire Line
+	4150 2000 4500 2000
+Wire Wire Line
+	4500 2000 4500 1900
+Connection ~ 4150 1150
+Wire Wire Line
+	4500 2000 4700 2000
+Connection ~ 4500 2000
+Wire Wire Line
+	5100 2000 5000 2000
+Wire Wire Line
+	5400 1150 5400 1900
+Wire Wire Line
+	5400 2300 5400 2600
+Wire Wire Line
+	5400 2600 5800 2600
+Wire Wire Line
+	5800 2600 5800 2450
+Wire Wire Line
+	4150 1150 4500 1150
+Wire Wire Line
+	4500 1200 4500 1150
+Connection ~ 4500 1150
+Wire Wire Line
+	4500 1150 5400 1150
+Wire Wire Line
+	4500 1500 4500 1600
+Text GLabel 4350 4100 2    50   Input ~ 0
+Off
+$Comp
+L Device:C C2
+U 1 1 5DD9404D
+P 3950 4400
+F 0 "C2" H 4065 4446 50  0000 L CNN
+F 1 "100n" H 4065 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3988 4250 50  0001 C CNN
+F 3 "~" H 3950 4400 50  0001 C CNN
+	1    3950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4100 3950 4100
+Connection ~ 3650 4100
+Wire Wire Line
+	3650 4700 3950 4700
+Wire Wire Line
+	3950 4700 3950 4550
+Connection ~ 3650 4700
+Wire Wire Line
+	3950 4250 3950 4100
+Connection ~ 3950 4100
+Wire Wire Line
+	3950 4100 3650 4100
+Wire Wire Line
+	2350 3150 2350 3250
+$Comp
+L power:GND #PWR01
+U 1 1 5DDB6CAF
+P 2350 3250
+F 0 "#PWR01" H 2350 3000 50  0001 C CNN
+F 1 "GND" H 2355 3077 50  0000 C CNN
+F 2 "" H 2350 3250 50  0001 C CNN
+F 3 "" H 2350 3250 50  0001 C CNN
+	1    2350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4700 3200 4800
+Connection ~ 3200 4700
+Wire Notes Line
+	2350 3600 5350 3600
+Wire Notes Line
+	5350 3600 5350 5200
+Wire Notes Line
+	5350 5200 2350 5200
+Wire Notes Line
+	2350 5200 2350 3600
+$Comp
+L barn53-kicad:VOut #PWR?
+U 1 1 5DDCC778
+P 5800 2450
+F 0 "#PWR?" H 5800 2300 50  0001 C CNN
+F 1 "VOut" H 5815 2623 50  0000 C CNN
+F 2 "" H 5800 2450 50  0001 C CNN
+F 3 "" H 5800 2450 50  0001 C CNN
+	1    5800 2450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
