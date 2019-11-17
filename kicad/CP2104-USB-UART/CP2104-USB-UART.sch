@@ -1,0 +1,461 @@
+EESchema Schematic File Version 4
+LIBS:CP2104-USB-UART-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "CP2104 USB to UART Circuit"
+Date "2019-11-17"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L barn53-kicad:USB_B_Micro J1
+U 1 1 5DD1C6C8
+P 1500 1800
+F 0 "J1" H 1350 2150 50  0000 C CNN
+F 1 "USB_B_Micro" V 1250 1750 50  0000 C CNN
+F 2 "barn53-kicad:MicroUSB_1" H 1650 1750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811131833_Boom-Precision-Elec-C21377_C21377.pdf" H 1650 1750 50  0001 C CNN
+	1    1500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:CP2104 U1
+U 1 1 5DD20E30
+P 3450 5000
+F 0 "U1" H 2900 6000 50  0000 C CNN
+F 1 "CP2104" H 3000 5900 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 3600 4050 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" H 2900 6250 50  0001 C CNN
+	1    3450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L barn53-kicad:BAT60A D1
+U 1 1 5DD29749
+P 2950 1600
+F 0 "D1" H 2950 1816 50  0000 C CNN
+F 1 "BAT60A" H 2950 1725 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 2950 1600 50  0001 C CNN
+F 3 "~" H 2950 1600 50  0001 C CNN
+	1    2950 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q1
+U 1 1 5DD29E35
+P 5500 1350
+F 0 "Q1" H 5687 1403 60  0000 L CNN
+F 1 "MMSS8050-H-TP" H 5687 1297 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5700 1550 60  0001 L CNN
+F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 1650 60  0001 L CNN
+F 4 "MMSS8050-H-TPMSCT-ND" H 5700 1750 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMSS8050-H-TP" H 5700 1850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5700 1950 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 5700 2050 60  0001 L CNN "Family"
+F 8 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 2150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/micro-commercial-co/MMSS8050-H-TP/MMSS8050-H-TPMSCT-ND/2825945" H 5700 2250 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 25V 1.5A SOT23" H 5700 2350 60  0001 L CNN "Description"
+F 11 "Micro Commercial Co" H 5700 2450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5700 2550 60  0001 L CNN "Status"
+	1    5500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q2
+U 1 1 5DD2BEBD
+P 5500 2100
+F 0 "Q2" H 5687 2047 60  0000 L CNN
+F 1 "MMSS8050-H-TP" H 5687 2153 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5700 2300 60  0001 L CNN
+F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 2400 60  0001 L CNN
+F 4 "MMSS8050-H-TPMSCT-ND" H 5700 2500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMSS8050-H-TP" H 5700 2600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5700 2700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 5700 2800 60  0001 L CNN "Family"
+F 8 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 2900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/micro-commercial-co/MMSS8050-H-TP/MMSS8050-H-TPMSCT-ND/2825945" H 5700 3000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 25V 1.5A SOT23" H 5700 3100 60  0001 L CNN "Description"
+F 11 "Micro Commercial Co" H 5700 3200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5700 3300 60  0001 L CNN "Status"
+	1    5500 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VBUS #PWR0102
+U 1 1 5DD2EAC5
+P 1950 1450
+F 0 "#PWR0102" H 1950 1300 50  0001 C CNN
+F 1 "VBUS" H 1965 1623 50  0000 C CNN
+F 2 "" H 1950 1450 50  0001 C CNN
+F 3 "" H 1950 1450 50  0001 C CNN
+	1    1950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5DD304F6
+P 3200 1500
+F 0 "#PWR0103" H 3200 1350 50  0001 C CNN
+F 1 "+5V" H 3215 1673 50  0000 C CNN
+F 2 "" H 3200 1500 50  0001 C CNN
+F 3 "" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2200 1400 2300
+Wire Wire Line
+	1400 2300 1500 2300
+Wire Wire Line
+	1500 2300 1500 2200
+Connection ~ 1500 2300
+Wire Wire Line
+	1800 1600 1950 1600
+Wire Wire Line
+	1950 1600 1950 1450
+NoConn ~ 1800 2000
+Text GLabel 1950 1800 2    50   Input ~ 0
+D+
+Text GLabel 1950 1900 2    50   Input ~ 0
+D-
+Wire Wire Line
+	1800 1800 1950 1800
+Wire Wire Line
+	1950 1900 1800 1900
+$Comp
+L Device:R R2
+U 1 1 5DD3ED38
+P 4950 1350
+F 0 "R2" V 4743 1350 50  0000 C CNN
+F 1 "10k" V 4834 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4880 1350 50  0001 C CNN
+F 3 "~" H 4950 1350 50  0001 C CNN
+	1    4950 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DD3F5F9
+P 4950 2100
+F 0 "R3" V 4743 2100 50  0000 C CNN
+F 1 "10k" V 4834 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4880 2100 50  0001 C CNN
+F 3 "~" H 4950 2100 50  0001 C CNN
+	1    4950 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2100 5100 2100
+Wire Wire Line
+	5100 1350 5300 1350
+Wire Wire Line
+	4650 2100 4800 2100
+Wire Wire Line
+	5100 1550 4650 1550
+Wire Wire Line
+	4650 1550 4650 1350
+Wire Wire Line
+	4650 1350 4800 1350
+Text GLabel 4350 1350 0    50   Input ~ 0
+DTR
+Wire Wire Line
+	5600 1550 5600 1650
+Wire Wire Line
+	5300 1800 5100 1550
+Wire Wire Line
+	5600 1800 5300 1800
+Wire Wire Line
+	5600 1900 5600 1800
+Wire Wire Line
+	5600 1650 5300 1650
+Wire Wire Line
+	5300 1650 5150 1850
+Wire Wire Line
+	5150 1850 4650 1850
+Wire Wire Line
+	4650 1850 4650 2100
+Text GLabel 4350 2100 0    50   Input ~ 0
+RTS
+Wire Wire Line
+	4350 2100 4650 2100
+Connection ~ 4650 2100
+Wire Wire Line
+	4350 1350 4650 1350
+Connection ~ 4650 1350
+Text GLabel 6600 1050 2    50   Input ~ 0
+Reset
+Text GLabel 6600 2400 2    50   Input ~ 0
+GPIO0
+Wire Wire Line
+	5600 1150 5600 1050
+Wire Wire Line
+	5600 1050 6600 1050
+Wire Wire Line
+	6600 2400 5600 2400
+Wire Wire Line
+	5600 2400 5600 2300
+Text GLabel 4250 4600 2    50   Input ~ 0
+DTR
+Text GLabel 4250 5200 2    50   Input ~ 0
+RTS
+Text GLabel 4250 4900 2    50   Input ~ 0
+TxD
+Text GLabel 4250 5000 2    50   Input ~ 0
+RxD
+Wire Wire Line
+	4150 4600 4250 4600
+Wire Wire Line
+	4150 4900 4250 4900
+Wire Wire Line
+	4250 5000 4150 5000
+Wire Wire Line
+	4150 5200 4250 5200
+$Comp
+L power:GND #PWR0104
+U 1 1 5DD479F2
+P 3450 6200
+F 0 "#PWR0104" H 3450 5950 50  0001 C CNN
+F 1 "GND" H 3455 6027 50  0000 C CNN
+F 2 "" H 3450 6200 50  0001 C CNN
+F 3 "" H 3450 6200 50  0001 C CNN
+	1    3450 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6000 3450 6100
+Wire Wire Line
+	3550 6000 3550 6100
+Wire Wire Line
+	3550 6100 3450 6100
+Connection ~ 3450 6100
+Wire Wire Line
+	3450 6100 3450 6200
+Text GLabel 2650 4900 0    50   Input ~ 0
+D-
+Text GLabel 2650 5000 0    50   Input ~ 0
+D+
+Wire Wire Line
+	2650 4900 2750 4900
+Wire Wire Line
+	2750 5000 2650 5000
+$Comp
+L power:VBUS #PWR0105
+U 1 1 5DD4A8B7
+P 2000 4500
+F 0 "#PWR0105" H 2000 4350 50  0001 C CNN
+F 1 "VBUS" H 2015 4673 50  0000 C CNN
+F 2 "" H 2000 4500 50  0001 C CNN
+F 3 "" H 2000 4500 50  0001 C CNN
+	1    2000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4500 2000 4600
+NoConn ~ 4150 4400
+NoConn ~ 4150 4500
+NoConn ~ 4150 4700
+NoConn ~ 4150 5300
+NoConn ~ 4150 5600
+NoConn ~ 4150 5700
+Wire Wire Line
+	3450 3300 3450 3400
+$Comp
+L Device:C C1
+U 1 1 5DD4F779
+P 2000 3650
+F 0 "C1" H 2115 3696 50  0000 L CNN
+F 1 "100n" H 2115 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2038 3500 50  0001 C CNN
+F 3 "~" H 2000 3650 50  0001 C CNN
+	1    2000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5DD509B7
+P 2000 3950
+F 0 "#PWR0106" H 2000 3700 50  0001 C CNN
+F 1 "GND" H 2005 3777 50  0000 C CNN
+F 2 "" H 2000 3950 50  0001 C CNN
+F 3 "" H 2000 3950 50  0001 C CNN
+	1    2000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3400 2450 3400
+Connection ~ 3450 3400
+Wire Wire Line
+	3450 3400 3450 3950
+Wire Wire Line
+	2750 4400 2650 4400
+Wire Wire Line
+	2650 4400 2650 4600
+Wire Wire Line
+	2650 4600 2750 4600
+$Comp
+L Device:C C3
+U 1 1 5DD53D12
+P 2450 3650
+F 0 "C3" H 2565 3696 50  0000 L CNN
+F 1 "4u7" H 2565 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2488 3500 50  0001 C CNN
+F 3 "~" H 2450 3650 50  0001 C CNN
+	1    2450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DD546A8
+P 2000 4850
+F 0 "C2" H 2115 4896 50  0000 L CNN
+F 1 "1u" H 2115 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2038 4700 50  0001 C CNN
+F 3 "~" H 2000 4850 50  0001 C CNN
+	1    2000 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 4600
+$Comp
+L power:GND #PWR01
+U 1 1 5DD573E8
+P 2000 5100
+F 0 "#PWR01" H 2000 4850 50  0001 C CNN
+F 1 "GND" H 2005 4927 50  0000 C CNN
+F 2 "" H 2000 5100 50  0001 C CNN
+F 3 "" H 2000 5100 50  0001 C CNN
+	1    2000 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 4600
+Wire Wire Line
+	2000 4700 2000 4600
+Wire Wire Line
+	2000 4600 2650 4600
+$Comp
+L power:VDD #PWR03
+U 1 1 5DD5B0FC
+P 3450 3300
+F 0 "#PWR03" H 3450 3150 50  0001 C CNN
+F 1 "VDD" H 3467 3473 50  0000 C CNN
+F 2 "" H 3450 3300 50  0001 C CNN
+F 3 "" H 3450 3300 50  0001 C CNN
+	1    3450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DD5B724
+P 4500 5500
+F 0 "R1" V 4293 5500 50  0000 C CNN
+F 1 "4k7" V 4384 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 5500 50  0001 C CNN
+F 3 "~" H 4500 5500 50  0001 C CNN
+	1    4500 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR04
+U 1 1 5DD5CC5E
+P 4800 5400
+F 0 "#PWR04" H 4800 5250 50  0001 C CNN
+F 1 "VDD" H 4817 5573 50  0000 C CNN
+F 2 "" H 4800 5400 50  0001 C CNN
+F 3 "" H 4800 5400 50  0001 C CNN
+	1    4800 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5500 4350 5500
+Wire Wire Line
+	4650 5500 4800 5500
+Wire Wire Line
+	4800 5500 4800 5400
+$Comp
+L power:VBUS #PWR02
+U 1 1 5DD6281D
+P 2700 1500
+F 0 "#PWR02" H 2700 1350 50  0001 C CNN
+F 1 "VBUS" H 2715 1673 50  0000 C CNN
+F 2 "" H 2700 1500 50  0001 C CNN
+F 3 "" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1500 2700 1600
+Wire Wire Line
+	2700 1600 2800 1600
+Wire Wire Line
+	3100 1600 3200 1600
+Wire Wire Line
+	3200 1600 3200 1500
+NoConn ~ 2750 5200
+NoConn ~ 2750 5300
+NoConn ~ 2750 5400
+NoConn ~ 2750 5500
+NoConn ~ 2750 5700
+Wire Wire Line
+	3250 4100 3250 3950
+Wire Wire Line
+	3250 3950 3450 3950
+Connection ~ 3450 3950
+Wire Wire Line
+	3450 3950 3450 4100
+Wire Wire Line
+	2000 3400 2000 3500
+Wire Wire Line
+	2450 3500 2450 3400
+Connection ~ 2450 3400
+Wire Wire Line
+	2450 3400 3450 3400
+Wire Wire Line
+	2450 3800 2450 3850
+Wire Wire Line
+	2450 3850 2000 3850
+Wire Wire Line
+	2000 3850 2000 3800
+Wire Wire Line
+	2000 3850 2000 3950
+Connection ~ 2000 3850
+Wire Wire Line
+	2000 5000 2000 5100
+Wire Wire Line
+	1500 2400 1500 2300
+$Comp
+L power:GND #PWR0101
+U 1 1 5DD2E547
+P 1500 2400
+F 0 "#PWR0101" H 1500 2150 50  0001 C CNN
+F 1 "GND" H 1505 2227 50  0000 C CNN
+F 2 "" H 1500 2400 50  0001 C CNN
+F 3 "" H 1500 2400 50  0001 C CNN
+	1    1500 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 4100
+Text GLabel 5850 4200 2    50   Input ~ 0
+TxD
+Text GLabel 5850 4100 2    50   Input ~ 0
+RxD
+Text GLabel 5850 3950 2    50   Input ~ 0
+GPIO0
+Text GLabel 5850 3800 2    50   Input ~ 0
+Reset
+Wire Notes Line
+	5600 3450 5600 4350
+Wire Notes Line
+	5600 4350 6650 4350
+Wire Notes Line
+	6650 3450 5600 3450
+Text Notes 5700 3600 0    50   ~ 0
+Programming Interface
+Wire Notes Line
+	6650 4350 6650 3450
+$EndSCHEMATC
