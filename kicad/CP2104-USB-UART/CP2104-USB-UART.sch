@@ -53,7 +53,7 @@ U 1 1 5DD29E35
 P 5500 1350
 F 0 "Q1" H 5687 1403 60  0000 L CNN
 F 1 "MMSS8050-H-TP" H 5687 1297 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5700 1550 60  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 1550 60  0001 L CNN
 F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 1650 60  0001 L CNN
 F 4 "MMSS8050-H-TPMSCT-ND" H 5700 1750 60  0001 L CNN "Digi-Key_PN"
 F 5 "MMSS8050-H-TP" H 5700 1850 60  0001 L CNN "MPN"
@@ -73,7 +73,7 @@ U 1 1 5DD2BEBD
 P 5500 2100
 F 0 "Q2" H 5687 2047 60  0000 L CNN
 F 1 "MMSS8050-H-TP" H 5687 2153 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5700 2300 60  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 2300 60  0001 L CNN
 F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 2400 60  0001 L CNN
 F 4 "MMSS8050-H-TPMSCT-ND" H 5700 2500 60  0001 L CNN "Digi-Key_PN"
 F 5 "MMSS8050-H-TP" H 5700 2600 60  0001 L CNN "MPN"
@@ -440,13 +440,13 @@ F 3 "" H 1500 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3650 4100
-Text GLabel 5850 4200 2    50   Input ~ 0
+Text GLabel 6100 4200 2    50   Input ~ 0
 TxD
-Text GLabel 5850 4100 2    50   Input ~ 0
+Text GLabel 6100 4100 2    50   Input ~ 0
 RxD
-Text GLabel 5850 3950 2    50   Input ~ 0
+Text GLabel 6100 3950 2    50   Input ~ 0
 GPIO0
-Text GLabel 5850 3800 2    50   Input ~ 0
+Text GLabel 6100 3800 2    50   Input ~ 0
 Reset
 Wire Notes Line
 	5600 3450 5600 4350
@@ -458,4 +458,12 @@ Text Notes 5700 3600 0    50   ~ 0
 Programming Interface
 Wire Notes Line
 	6650 4350 6650 3450
+Wire Wire Line
+	6100 3800 5800 3800
+Wire Wire Line
+	6100 3950 5800 3950
+Wire Wire Line
+	6100 4100 5800 4100
+Wire Wire Line
+	6100 4200 5800 4200
 $EndSCHEMATC
