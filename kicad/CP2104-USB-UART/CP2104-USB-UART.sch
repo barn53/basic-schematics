@@ -48,46 +48,6 @@ F 3 "~" H 2950 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q1
-U 1 1 5DD29E35
-P 5500 1350
-F 0 "Q1" H 5687 1403 60  0000 L CNN
-F 1 "MMSS8050-H-TP" H 5687 1297 60  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 1550 60  0001 L CNN
-F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 1650 60  0001 L CNN
-F 4 "MMSS8050-H-TPMSCT-ND" H 5700 1750 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMSS8050-H-TP" H 5700 1850 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5700 1950 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 5700 2050 60  0001 L CNN "Family"
-F 8 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 2150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/micro-commercial-co/MMSS8050-H-TP/MMSS8050-H-TPMSCT-ND/2825945" H 5700 2250 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 25V 1.5A SOT23" H 5700 2350 60  0001 L CNN "Description"
-F 11 "Micro Commercial Co" H 5700 2450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5700 2550 60  0001 L CNN "Status"
-	1    5500 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q2
-U 1 1 5DD2BEBD
-P 5500 2100
-F 0 "Q2" H 5687 2047 60  0000 L CNN
-F 1 "MMSS8050-H-TP" H 5687 2153 60  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 2300 60  0001 L CNN
-F 3 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 2400 60  0001 L CNN
-F 4 "MMSS8050-H-TPMSCT-ND" H 5700 2500 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMSS8050-H-TP" H 5700 2600 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5700 2700 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 5700 2800 60  0001 L CNN "Family"
-F 8 "https://www.mccsemi.com/pdf/Products/MMSS8050(SOT-23).pdf" H 5700 2900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/micro-commercial-co/MMSS8050-H-TP/MMSS8050-H-TPMSCT-ND/2825945" H 5700 3000 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 25V 1.5A SOT23" H 5700 3100 60  0001 L CNN "Description"
-F 11 "Micro Commercial Co" H 5700 3200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5700 3300 60  0001 L CNN "Status"
-	1    5500 2100
-	1    0    0    1   
-$EndComp
-$Comp
 L power:VBUS #PWR0102
 U 1 1 5DD2EAC5
 P 1950 1450
@@ -466,4 +426,26 @@ Wire Wire Line
 	6100 4100 5800 4100
 Wire Wire Line
 	6100 4200 5800 4200
+$Comp
+L barn53-kicad:S8050_J3Y Q?
+U 1 1 5DD4B508
+P 5500 1350
+F 0 "Q?" H 5691 1396 50  0000 L CNN
+F 1 "S8050_J3Y" H 5691 1305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 1275 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1910111742_MDD-Microdiode-Electronics-S8050-J3Y_C364312.pdf" H 5500 1350 50  0001 L CNN
+	1    5500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L barn53-kicad:S8050_J3Y Q?
+U 1 1 5DD4BF45
+P 5500 2100
+F 0 "Q?" H 5691 2054 50  0000 L CNN
+F 1 "S8050_J3Y" H 5691 2145 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 2025 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1910111742_MDD-Microdiode-Electronics-S8050-J3Y_C364312.pdf" H 5500 2100 50  0001 L CNN
+	1    5500 2100
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
