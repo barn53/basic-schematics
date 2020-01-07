@@ -327,7 +327,7 @@ RTS
 Wire Wire Line
 	1800 1600 2800 1600
 Text HLabel 6900 1050 2    50   Output ~ 0
-Reset
+~Reset
 Text HLabel 6100 2400 2    50   Output ~ 0
 Flash
 $Comp

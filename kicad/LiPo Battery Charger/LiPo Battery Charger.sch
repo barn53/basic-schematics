@@ -86,13 +86,11 @@ U 1 1 5DD48371
 P 1800 3800
 F 0 "J?" H 1880 3792 50  0000 L CNN
 F 1 "Conn_01x02" H 1880 3701 50  0000 L CNN
-F 2 "" H 1800 3800 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal" H 1800 3800 50  0001 C CNN
 F 3 "~" H 1800 3800 50  0001 C CNN
 	1    1800 3800
 	1    0    0    -1  
 $EndComp
-Text Notes 1450 3700 0    50   ~ 0
-Package: Molex PicoBlade 1.25mm
 $Comp
 L Device:LED D?
 U 1 1 5DD48BF5

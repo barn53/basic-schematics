@@ -526,7 +526,7 @@ ADC
 Text HLabel 5100 4600 2    39   Input Italic 0
 Enable
 Text HLabel 5100 4700 2    39   Input Italic 0
-Reset
+~Reset
 Text Label 5100 4000 2    50   ~ 0
 LNA
 Text Label 5100 4100 2    50   ~ 0
@@ -536,7 +536,7 @@ XTAL_OUT
 Text Label 7550 1900 1    39   Italic 0
 Enable
 Text Label 7850 1900 1    39   Italic 0
-Reset
+~Reset
 Text Label 8150 1900 1    39   Italic 0
 GPIO0
 Text Label 8450 1900 1    39   Italic 0
@@ -550,7 +550,7 @@ LNA
 Text Label 4800 4600 0    39   Italic 0
 Enable
 Text Label 4800 4700 0    39   Italic 0
-Reset
+~Reset
 Text Label 4800 4900 0    39   Italic 0
 GPIO0
 Text Label 4800 5100 0    39   Italic 0
@@ -599,7 +599,7 @@ F 3 "~" H 7850 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7250 2750 0    39   Italic 0
-Reset
+~Reset
 Text Label 8500 2750 2    39   Italic 0
 GPIO16
 Wire Wire Line
