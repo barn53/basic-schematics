@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:LiPo Battery Charger-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -35,17 +36,6 @@ F 12 "Active" H 5000 4300 60  0001 L CNN "Status"
 $EndComp
 Text Notes 5400 3150 0    50   ~ 0
 Package TSOP5 == SOT-753 ???
-$Comp
-L Device:R R?
-U 1 1 5DD40A6F
-P 4900 4750
-F 0 "R?" H 4970 4796 50  0000 L CNN
-F 1 "R" H 4970 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 4750 50  0001 C CNN
-F 3 "~" H 4900 4750 50  0001 C CNN
-	1    4900 4750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5DD40F93
@@ -85,7 +75,7 @@ U 1 1 5DD46774
 P 1800 2000
 F 0 "J?" H 1857 2467 50  0000 C CNN
 F 1 "USB_B_Micro" H 1857 2376 50  0000 C CNN
-F 2 "barn53-kicad:MicroUSB_1" H 1950 1950 50  0001 C CNN
+F 2 "barn53-kicad:MicroUSB_through_hole_fixing" H 1950 1950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811131833_Boom-Precision-Elec-C21377_C21377.pdf" H 1950 1950 50  0001 C CNN
 	1    1800 2000
 	1    0    0    -1  
@@ -112,6 +102,17 @@ F 1 "LED" H 7693 4775 50  0001 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7700 4650 50  0001 C CNN
 F 3 "~" H 7700 4650 50  0001 C CNN
 	1    7700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD40A6F
+P 4900 4750
+F 0 "R?" H 4970 4796 50  0000 L CNN
+F 1 "R" H 4970 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 4750 50  0001 C CNN
+F 3 "~" H 4900 4750 50  0001 C CNN
+	1    4900 4750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

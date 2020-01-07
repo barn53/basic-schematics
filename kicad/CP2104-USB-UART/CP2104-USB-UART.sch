@@ -107,7 +107,7 @@ Connection ~ 4650 1350
 Wire Wire Line
 	5600 1150 5600 1050
 Wire Wire Line
-	5600 1050 6100 1050
+	5600 1050 6500 1050
 Wire Wire Line
 	6100 2400 5600 2400
 Wire Wire Line
@@ -233,11 +233,8 @@ F 3 "~" H 4500 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 5500 4350 5500
-NoConn ~ 2750 5200
-NoConn ~ 2750 5300
 NoConn ~ 2750 5400
 NoConn ~ 2750 5500
-NoConn ~ 2750 5700
 Wire Wire Line
 	3250 4100 3250 3950
 Wire Wire Line
@@ -301,27 +298,23 @@ F 3 "https://datasheet.lcsc.com/szlcsc/1910111742_MDD-Microdiode-Electronics-S80
 $EndComp
 Text HLabel 4450 5000 2    50   Input Italic 0
 RxD
-Text HLabel 4450 4900 2    50   Input Italic 0
+Text HLabel 4450 4900 2    50   Output Italic 0
 TxD
 Wire Wire Line
 	4650 5500 5000 5500
 Text Label 5000 5500 2    50   Italic 0
 VDD
-Text Label 3450 3400 2    50   Italic 0
+Text Label 3450 3400 2    50   ~ 0
 VDD
-Text HLabel 2100 1900 2    50   Input ~ 0
-D-
-Text HLabel 2100 1800 2    50   Input ~ 0
-D+
 Text Label 1950 1600 0    50   Italic 0
 VBus
-Text Label 1950 1800 0    50   Italic 0
+Text Label 2100 1800 2    50   Italic 0
 D+
-Text Label 1950 1900 0    50   Italic 0
+Text Label 2100 1900 2    50   Italic 0
 D-
-Text Label 2400 4900 0    50   Italic 0
+Text Label 2400 4900 0    50   ~ 0
 D-
-Text Label 2400 5000 0    50   Italic 0
+Text Label 2400 5000 0    50   ~ 0
 D+
 Text Label 4450 5200 2    50   ~ 0
 RTS
@@ -333,9 +326,9 @@ Text Label 4350 2100 0    50   ~ 0
 RTS
 Wire Wire Line
 	1800 1600 2800 1600
-Text HLabel 6100 1050 2    50   Input ~ 0
+Text HLabel 6900 1050 2    50   Output ~ 0
 Reset
-Text HLabel 6100 2400 2    50   Input ~ 0
+Text HLabel 6100 2400 2    50   Output ~ 0
 Flash
 $Comp
 L Interface_USB:CP2104 U?
@@ -354,4 +347,144 @@ Wire Wire Line
 	3100 1600 3500 1600
 Text Label 3500 1600 2    50   Italic 0
 +5V
+Text Notes 6600 4300 0    39   ~ 0
+GPIO.0 and GPIO.1 are configurable as Transmit Toggle and Receive Toggle pins.\nThese pins are logic high when a device is not transmitting or receiving data,\nand they toggle at a fixed rate when data transfer is in progress.\nTypically, these pins are connected to two LEDs to indicate data transfer.\n\n
+Text Notes 1550 6150 0    39   ~ 0
+Capacitor needed when\nprogramming the one-time\nconfiguration ROM
+Wire Wire Line
+	2750 5200 2400 5200
+Text Label 2400 5200 0    50   ~ 0
+GPIO.0
+$Comp
+L Device:C C?
+U 1 1 5DF9F074
+P 6500 1300
+F 0 "C?" H 6615 1346 50  0000 L CNN
+F 1 "100n" H 6615 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6538 1150 50  0001 C CNN
+F 3 "~" H 6500 1300 50  0001 C CNN
+	1    6500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1150 6500 1050
+Connection ~ 6500 1050
+Wire Wire Line
+	6500 1050 6900 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5DFA1D79
+P 6500 1600
+F 0 "#PWR?" H 6500 1350 50  0001 C CNN
+F 1 "GND" H 6505 1427 50  0000 C CNN
+F 2 "" H 6500 1600 50  0001 C CNN
+F 3 "" H 6500 1600 50  0001 C CNN
+	1    6500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1600 6500 1450
+$Comp
+L Device:C C?
+U 1 1 5DFA35FA
+P 2500 5950
+F 0 "C?" H 2615 5996 50  0000 L CNN
+F 1 "4u7" H 2615 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2538 5800 50  0001 C CNN
+F 3 "~" H 2500 5950 50  0001 C CNN
+	1    2500 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5700 2500 5700
+Wire Wire Line
+	2500 5700 2500 5800
+$Comp
+L power:GND #PWR?
+U 1 1 5DFA5765
+P 2500 6200
+F 0 "#PWR?" H 2500 5950 50  0001 C CNN
+F 1 "GND" H 2505 6027 50  0000 C CNN
+F 2 "" H 2500 6200 50  0001 C CNN
+F 3 "" H 2500 6200 50  0001 C CNN
+	1    2500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6200 2500 6100
+Text Label 5350 4300 0    50   ~ 0
+GPIO.1
+$Comp
+L Device:LED D?
+U 1 1 5DFA7B12
+P 6450 3650
+F 0 "D?" V 6489 3532 50  0000 R CNN
+F 1 "RxD" V 6398 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6450 3650 50  0001 C CNN
+F 3 "~" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 3400 6450 3500
+Wire Wire Line
+	5350 4300 5650 4300
+Text Label 5350 3950 0    50   ~ 0
+GPIO.0
+Text Label 5350 3400 0    50   ~ 0
+VDD
+$Comp
+L Device:LED D?
+U 1 1 5E139D8B
+P 6050 3650
+F 0 "D?" V 6089 3532 50  0000 R CNN
+F 1 "TxD" V 5998 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6050 3650 50  0001 C CNN
+F 3 "~" H 6050 3650 50  0001 C CNN
+	1    6050 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 3400 6050 3400
+Wire Wire Line
+	6050 3400 6050 3500
+Wire Wire Line
+	5350 3950 5650 3950
+Wire Wire Line
+	6050 3950 6050 3800
+Wire Wire Line
+	2750 5300 2400 5300
+Text Label 2400 5300 0    50   ~ 0
+GPIO.1
+$Comp
+L Device:R R?
+U 1 1 5E1412B4
+P 5800 3950
+F 0 "R?" V 5593 3950 50  0000 C CNN
+F 1 "180" V 5684 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 3950 50  0001 C CNN
+F 3 "~" H 5800 3950 50  0001 C CNN
+	1    5800 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3950 6050 3950
+$Comp
+L Device:R R?
+U 1 1 5E142051
+P 5800 4300
+F 0 "R?" V 5593 4300 50  0000 C CNN
+F 1 "180" V 5684 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 4300 50  0001 C CNN
+F 3 "~" H 5800 4300 50  0001 C CNN
+	1    5800 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3400 6450 3400
+Connection ~ 6050 3400
+Wire Wire Line
+	6450 3800 6450 4300
+Wire Wire Line
+	5950 4300 6450 4300
 $EndSCHEMATC
