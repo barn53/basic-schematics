@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:push-button-latch-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -127,12 +126,12 @@ $EndComp
 $Comp
 L barn53-kicad:SIA527DJ-T1-GE3 Q?
 U 2 1 5DD2081B
-P 5975 2100
-F 0 "Q?" H 6163 2146 50  0000 L CNN
-F 1 "SIA527DJ-T1-GE3" H 6163 2055 50  0000 L CNN
-F 2 "barn53-kicad:PowerPAK_SC70-6L_Dual" H 6925 1900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1806021242_Vishay-Intertech-SIA527DJ-T1-GE3_C222486.pdf" H 5975 2100 50  0001 C CNN
-	2    5975 2100
+P 7175 2100
+F 0 "Q?" H 7363 2146 50  0000 L CNN
+F 1 "SIA527DJ-T1-GE3" H 7363 2055 50  0000 L CNN
+F 2 "barn53-kicad:PowerPAK_SC70-6L_Dual" H 8125 1900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1806021242_Vishay-Intertech-SIA527DJ-T1-GE3_C222486.pdf" H 7175 2100 50  0001 C CNN
+	2    7175 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -171,12 +170,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5DD27628
-P 5525 2000
-F 0 "R?" V 5318 2000 50  0000 C CNN
-F 1 "100k" V 5409 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5455 2000 50  0001 C CNN
-F 3 "~" H 5525 2000 50  0001 C CNN
-	1    5525 2000
+P 6725 2000
+F 0 "R?" V 6518 2000 50  0000 C CNN
+F 1 "100k" V 6609 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6655 2000 50  0001 C CNN
+F 3 "~" H 6725 2000 50  0001 C CNN
+	1    6725 2000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -273,23 +272,23 @@ Wire Wire Line
 	4600 2000 4600 1900
 Connection ~ 4150 1150
 Wire Wire Line
-	4600 2000 5375 2000
+	4600 2000 5100 2000
 Connection ~ 4600 2000
 Wire Wire Line
-	5775 2000 5675 2000
+	6975 2000 6875 2000
 Wire Wire Line
-	6075 1150 6075 1900
+	7275 1150 7275 1900
 Wire Wire Line
-	6075 2300 6075 2425
+	7275 2300 7275 2425
 Wire Wire Line
-	6075 2425 6325 2425
+	7275 2425 7525 2425
 Wire Wire Line
 	4150 1150 4600 1150
 Wire Wire Line
 	4600 1200 4600 1150
 Connection ~ 4600 1150
 Wire Wire Line
-	4600 1150 6075 1150
+	4600 1150 7275 1150
 Wire Wire Line
 	4600 1500 4600 1600
 $Comp
@@ -347,18 +346,62 @@ Wire Wire Line
 Connection ~ 3200 1150
 Text HLabel 2000 1150 0    50   Input ~ 0
 VIn
-Text HLabel 6325 2425 2    50   Output ~ 0
-VOut
+Text HLabel 7525 2425 2    50   Output ~ 0
+OutHigh
 Text HLabel 4350 4100 2    50   Input ~ 0
 Off
 Wire Notes Line
-	5025 875  5025 2550
+	6225 875  6225 2550
 Wire Notes Line
-	5025 2550 7075 2550
+	6225 2550 8275 2550
 Wire Notes Line
-	7075 2550 7075 875 
+	8275 2550 8275 875 
 Wire Notes Line
-	7075 875  5025 875 
-Text Notes 6525 975  0    50   ~ 0
+	8275 875  6225 875 
+Text Notes 7725 975  0    50   ~ 0
 Latch Inverter
+$Comp
+L barn53-kicad:BAT60A D?
+U 1 1 5F981A44
+P 6850 3650
+F 0 "D?" H 6850 3434 50  0000 C CNN
+F 1 "BAT60A" H 6850 3525 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 7570 3530 50  0001 C CNN
+F 3 "~" H 6850 3650 50  0001 C CNN
+	1    6850 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 3650 6300 3650
+Wire Wire Line
+	7000 3650 7400 3650
+Wire Wire Line
+	7400 4050 6300 4050
+Text HLabel 6300 3650 0    50   Input ~ 0
+VIn
+Text HLabel 6300 4050 0    50   Input ~ 0
+OutLow
+Text HLabel 5450 2200 2    50   Input ~ 0
+OutLow
+Wire Wire Line
+	5450 2200 5100 2200
+Wire Wire Line
+	5100 2200 5100 2000
+Connection ~ 5100 2000
+Wire Wire Line
+	5100 2000 6575 2000
+Text HLabel 7400 3650 2    50   Input ~ 0
+VInSchottky
+Text Notes 7000 3150 0    50   ~ 0
+For capacitive loads,\nthis schottky may help.\n(With the not inverted output)
+Wire Notes Line
+	5750 4250 8200 4250
+Wire Notes Line
+	5750 2850 8200 2850
+Wire Notes Line
+	5750 2850 5750 4250
+Wire Notes Line
+	8200 2850 8200 4250
+Text Notes 5850 4800 0    50   ~ 0
+Alternative MOSFETs:\nN-Channel: IRLML6244, Si2302\nP-Channel: IRLML6402, IRLML2244, SI2301\nN+P-Channel: IRF7319
 $EndSCHEMATC

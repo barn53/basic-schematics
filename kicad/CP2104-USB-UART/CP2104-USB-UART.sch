@@ -486,4 +486,26 @@ Wire Wire Line
 	6450 3800 6450 4300
 Wire Wire Line
 	5950 4300 6450 4300
+$Comp
+L Transistor_BJT:PUMX1 Q?
+U 1 1 5F99350C
+P 7800 1750
+F 0 "Q?" H 7991 1796 50  0000 L CNN
+F 1 "PUMX1" H 7991 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8000 1850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PUMX1.pdf" H 7800 1750 50  0001 C CNN
+	1    7800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PUMX1 Q?
+U 2 1 5F994B7F
+P 7800 2350
+F 0 "Q?" H 7991 2304 50  0000 L CNN
+F 1 "PUMX1" H 7991 2395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8000 2450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PUMX1.pdf" H 7800 2350 50  0001 C CNN
+	2    7800 2350
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
