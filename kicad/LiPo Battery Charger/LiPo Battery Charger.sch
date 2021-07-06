@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:LiPo Battery Charger-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -54,7 +53,8 @@ P 7850 2650
 F 0 "D?" H 7850 2866 50  0000 C CNN
 F 1 "NSR0320" H 7850 2775 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323F" H 8550 2550 50  0001 C CNN
-F 3 "~" H 7850 2650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NSR0320MW2T1G_C48192.pdf" H 7850 2650 50  0001 C CNN
+F 4 "C48192" H 7850 2650 50  0001 C CNN "LCSC"
 	1    7850 2650
 	1    0    0    -1  
 $EndComp
@@ -66,6 +66,7 @@ F 0 "Q?" H 7638 3596 50  0000 L CNN
 F 1 "SI2301" H 7638 3505 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7620 3540 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/70627/70627.pdf" H 7620 3540 50  0001 C CNN
+F 4 "C10487" H 7450 3550 50  0001 C CNN "LCSC"
 	1    7450 3550
 	1    0    0    -1  
 $EndComp
